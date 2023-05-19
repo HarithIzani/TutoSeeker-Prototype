@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary: #81b29a;
+  --background: #f4f1de;
+  --navbar: #ebe5c2;
+  --section: #e07a5f;
+  --text: #3d405b;
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: var(--navbar);
+  padding: 1em;
+}
+
+.navbar .main-logo {
+  width: 5em;
+  height: 5em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text);
+  font-size: 3em;
+  margin-left: -20em;
+  padding-top: 0.1em;
+}
+
+.navbar .logo span {
+  color: var(--primary);
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container-right {
+  padding-top: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .container-right .container-right-decoration {
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--text);
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+}
+
+.navbar .container-right .container-right-decoration::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--section);
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.navbar .container-right .container-right-decoration:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.hero {
+  padding: 2em;
+}
+
+.hero .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.hero .image .teacher-box {
+  position: relative;
+  margin-right: 10em;
+}
+
+.hero .image .teacher-box .image-teacher {
+  display: block;
+  width: 100%;
+}
+
+.hero .image .teacher-box .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  border-radius: 1em;
+}
+
+.hero .image .teacher-box .image-overlay a {
+  padding-top: 13em;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins';
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .image .teacher-box .image-overlay .image-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero .image .teacher-box .image-overlay .image-description {
+  font-size: 1.3em;
+}
+
+.hero .image .teacher-box .image-overlay:hover {
+  opacity: 1;
+}
+
+.hero .image .teacher-box .image-overlay > * {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.hero .image .teacher-box .image-overlay:hover > * {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.hero .image .student-box {
+  position: relative;
+  margin-left: 10em;
+}
+
+.hero .image .student-box .image-student {
+  display: block;
+  width: 100%;
+}
+
+.hero .image .student-box .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  border-radius: 1em;
+}
+
+.hero .image .student-box .image-overlay a {
+  padding-top: 13em;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins';
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .image .student-box .image-overlay .image-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero .image .student-box .image-overlay .image-description {
+  font-size: 1.3em;
+}
+
+.hero .image .student-box .image-overlay:hover {
+  opacity: 1;
+}
+
+.hero .image .student-box .image-overlay > * {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.hero .image .student-box .image-overlay:hover > * {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.contact {
+  position: relative;
+  margin-top: -1em;
+  background: var(--navbar);
+  width: 100%;
+  padding-bottom: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact h2 {
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+.contact .form-fields {
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .form-name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 4%;
+}
+
+.contact .form-name-email .form-message {
+  width: 48%;
+}
+
+.contact .form-name-email {
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  margin: 10px 0;
+  padding-right: 5em;
+}
+
+.contact .input {
+  border: 0;
+  border-bottom: 2px solid var(--section);
+  background: transparent;
+  color: var(--text);
+  margin: 10px 0;
+  padding-top: 0.5em;
+}
+
+.contact .form-message {
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  margin: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contact textarea {
+  border: 0;
+  border-bottom: 2px solid var(--section);
+  background: transparent;
+  color: var(--text);
+  margin: 10px 0;
+}
+
+.contact ::-webkit-input-placeholder {
+  color: var(--text);
+  font-family: 'Poppins';
+}
+
+.contact .btn {
+  font-family: 'Poppins';
+  margin-top: -1em;
+  background-color: transparent;
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1.3em;
+  border-color: var(--section);
+  border-radius: 5em;
+  display: inline-block;
+  width: unset;
+  cursor: pointer;
+  padding: .2em 2em;
+}
+/*# sourceMappingURL=main.css.map */
